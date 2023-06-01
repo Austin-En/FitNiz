@@ -311,7 +311,7 @@ public class DBHelper extends SQLiteOpenHelper {
         Cursor cursor = null;
         boolean data = false;
         if(userID != -1) {
-            cursor = DB.rawQuery("Select * from " + METRICS_TABLE + " where userID = ? and name = ? and unit = ?", new String[]{String.valueOf(userID), name, unit});
+            cursor = DB.rawQuery("Select * from " + METRICS_TABLE + " where userID = ? and name = ? and unitofmeasurement = ?", new String[]{String.valueOf(userID), name, unit});
             String fieldToAdd = null;
             while (cursor.moveToNext()) {
                 data = true;
