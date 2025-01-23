@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExerciseActivity"
+    android:background="@drawable/main_wallpaper">
+
+    <EditText
+        android:id="@+id/weightsUsedText"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:fontFamily="@font/advent_pro"
+        android:inputType="number"
+        android:maxLength="4"
+        android:minHeight="48dp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="225dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="472dp"
+        android:fontFamily="@font/advent_pro"
+        android:text="Enter 0 If Not Applicable"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="146dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="416dp"
+        android:fontFamily="@font/advent_pro"
+        android:text="Weights (LB):"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/repsText"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:fontFamily="@font/advent_pro"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setsText"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/advent_pro"
+        android:text="Reps:"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/advent_pro"
+        android:text="Title:"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/setsText"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:fontFamily="@font/advent_pro"
+        android:inputType="number"
+        android:maxLength="3"
+        android:minHeight="48dp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:fontFamily="@font/advent_pro"
+        android:text="Sets:"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add Exercise"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/advent_pro_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/exerciseTitleText"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:fontFamily="@font/advent_pro"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/backButtonAddExercise"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_left"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="153dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="556dp"
+        android:textSize="25dp"
+        android:background="@drawable/ic_button_design"
+        android:fontFamily="sans-serif"
+        app:backgroundTint="@null"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
